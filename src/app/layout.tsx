@@ -2,22 +2,26 @@
 import '../styles/globals.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { GeistSans } from 'geist/font/sans'
+import { GeistMono } from 'geist/font/mono'
 
 export const metadata = {
-  title: 'My Portfolio',
+  title: 'Andrew Hartford | Portfolio',
   description: 'Welcome to my portfolio website',
 };
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen flex flex-col">
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="flex flex-col min-h-screen font-sans antialiased">
         <Header />
-        <main className="flex-grow container mx-auto px-4 py-8">{children}</main>
+        <main className="flex-grow pt-16 pb-8">
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
