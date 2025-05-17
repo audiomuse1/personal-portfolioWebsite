@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom dark mode toggle (optional) */
+html {
+  scroll-behavior: smooth;
+}
