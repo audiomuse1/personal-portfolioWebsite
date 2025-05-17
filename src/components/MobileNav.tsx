@@ -67,6 +67,13 @@ export default function MobileNav() {
               >
                 Contact
               </Link>
+              <Link 
+                href="/resume"
+                onClick={() => setIsOpen(false)}
+                className="text-white hover:text-emerald-200"
+              >
+                Resume
+              </Link>
             </nav>
           </motion.div>
         )}

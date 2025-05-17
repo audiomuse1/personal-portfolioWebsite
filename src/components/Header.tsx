@@ -21,6 +21,9 @@ export default function Header() {
           <Link href="/projects" className="hover:text-emerald-200 transition-colors">
             Projects
           </Link>
+          <Link href="/resume" className="hover:text-emerald-200 transition-colors">
+            Resume
+          </Link>
           <Link href="/contact" className="hover:text-emerald-200 transition-colors">
             Contact
           </Link>
