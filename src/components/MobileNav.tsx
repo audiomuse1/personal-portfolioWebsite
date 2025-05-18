@@ -74,6 +74,13 @@ export default function MobileNav() {
               >
                 Resume
               </Link>
+              <Link 
+                href="/skills"
+                onClick={() => setIsOpen(false)}
+                className="text-white hover:text-emerald-200"
+              >
+                Skills & Services
+              </Link>
             </nav>
           </motion.div>
         )}
