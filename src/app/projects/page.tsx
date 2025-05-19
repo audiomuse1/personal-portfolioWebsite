@@ -47,6 +47,21 @@ const projects: Project[] = [
     liveUrl: "https://audiomuse1.github.io/personal-portfolio-projectColorifyApp/",
     githubUrl: "https://github.com/audiomuse1/portfolio-project-colorify-app",
     technologies: ["React", "Anime.js", "JavaScript", "Animation"]
+  },
+  {
+    title: "Custom Sticker Designer",
+    description: "Extended a fork of Excalidraw to create a professional sticker design tool. Implemented custom font library integration, including complex scripting to parse and filter symbol font files for optimal performance.",
+    learnings: "Gained deep experience working with a large-scale React application, implementing font parsing algorithms, and contributing to an established codebase while maintaining architectural patterns.",
+    image: "/images/portfolioProjectImages/portfolioStickerBuilder.png",
+    liveUrl: "https://bacstickerbuilder.com/sticker-designer/",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Font Processing",
+      "Excalidraw",
+      "Canvas API",
+      "Vector Graphics"
+    ]
   }
 ];
 
