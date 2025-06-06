@@ -50,7 +50,7 @@ const projects: Project[] = [
   },
   {
     title: "Custom Sticker Designer",
-    description: "Extended a fork of Excalidraw to create a professional sticker design tool. Implemented custom font library integration, including complex scripting to parse and filter symbol font files for optimal performance.",
+    description: "Extended a fork of open-source Excalidraw to create a professional sticker design tool. Implemented custom font library integration, including complex scripting to parse and filter symbol font files for optimal performance.",
     learnings: "Gained deep experience working with a large-scale React application, implementing font parsing algorithms, and contributing to an established codebase while maintaining architectural patterns.",
     image: "/images/portfolioProjectImages/portfolioStickerBuilder.png",
     liveUrl: "https://bacstickerbuilder.com/sticker-designer/",
@@ -61,6 +61,22 @@ const projects: Project[] = [
       "Excalidraw",
       "Canvas API",
       "Vector Graphics"
+    ]
+  },
+  {
+    title: "UEP Email Notifications Service",
+    description: "Built a production-grade Node.js microservice that processes BigCommerce order webhooks and sends customized transactional emails. The service automatically detects specific SKUs in orders and triggers tailored email notifications using AWS SES, with automated order status updates via BigCommerce's API.",
+    learnings: "Gained extensive experience with webhook processing, AWS SES email service implementation, and Docker containerization. Successfully navigated AWS SES production access approval process and implemented a robust logging system for production monitoring.",
+    image: "/images/portfolioProjectImages/portfolioWebhookEmailNotifications.png",
+    technologies: [
+      "Node.js",
+      "TypeScript",
+      "Express",
+      "Docker",
+      "AWS SES",
+      "BigCommerce API",
+      "Webhooks",
+      "CI/CD"
     ]
   }
 ];
