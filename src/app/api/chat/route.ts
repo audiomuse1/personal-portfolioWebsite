@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
     const { message } = await req.json();
 
     const response = await together.chat.completions.create({
-      model: "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free", // Confirm model availability in Together dashboard
+      model: "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free", 
       messages: [
         {
           role: "system",
@@ -61,7 +61,9 @@ export async function POST(req: NextRequest) {
       ],
     });
 
-    return NextResponse.json({ reply: response.choices[0].message.content });
+    return NextResponse.json({ 
+      reply: response.choices?.[0]?.message?.content ?? "No response from AI." 
+    });
   } catch (error) {
     console.error("Together API error:", error);
     return NextResponse.json(
