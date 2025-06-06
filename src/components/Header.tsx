@@ -30,6 +30,9 @@ export default function Header() {
           <Link href="/contact" className="hover:text-emerald-200 transition-colors">
             Contact
           </Link>
+            <Link href="/chat" className="hover:text-emerald-200 transition-colors">
+            AI Chat
+          </Link>
         </nav>
 
         {/* Mobile Navigation */}
