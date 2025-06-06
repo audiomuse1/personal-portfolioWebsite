@@ -81,6 +81,13 @@ export default function MobileNav() {
               >
                 Skills & Services
               </Link>
+               <Link 
+                href="/chat"
+                onClick={() => setIsOpen(false)}
+                className="text-white hover:text-emerald-200"
+              >
+                AI Chat
+              </Link>
             </nav>
           </motion.div>
         )}
