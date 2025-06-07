@@ -13,7 +13,7 @@ export default function AboutPage() {
             <br></br>
             I'm someone who's fascinated by the ways technology shapes society, especially where it intersects with politics, policy, and real-world impact. I care about building tools that are not only functional but thoughtful solutions that support people, communities, and transparency. My background in Ecommerce has taught me how to deliver under pressure, but what drives me most is the chance to work on projects that live at the edge of systems, where technology influences how we live, decide, and connect.            <br></br>
             <br></br>
-            In my free-time, I enjoy biking, staying up-to-date on politics (especially locally), learning new things.
+            In my free-time, I enjoy biking, staying up-to-date on politics (especially locally), and learning new skills.
           </p>
           {/* Add more details here */}
         </section>
