@@ -3,18 +3,17 @@ import PageHeading from '../../components/PageHeading'
 
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-4 py-8 mt-16">
+    <div className="container mx-auto px-4 py-8">
       <PageHeading>About Me</PageHeading>
       <div className="w-full mx-auto">
         <section>
           <p className="prose prose-lg prose-neutral">
-            Hi, I'm Andrew a developer based in Austin, TX.  I came to Austin to study Chemistry at the University of Texas, but along the way, I discovered a love for technology and building things with code. That passion led me through a full-stack coding bootcamp and into a career I genuinely enjoy every day.
+            Hi, I'm Andrew a developer based in Austin, TX.  I came to Austin to study Chemistry at the University of Texas, and along the way, I discovered a love for technology and building things with code. That passion led me into a career I genuinely enjoy today.
             <br></br>
             <br></br>
-            I'm not just a developer, I'm a communicator, problem-solver, and someone who cares deeply about the impact of technology. I bring a strong work ethic, clear communication, and a collaborative mindset to every project I take on. Over the years, I’ve worked extensively in eCommerce, building tools that don’t just work they make a difference for real people and businesses.
+            I'm someone who's fascinated by the ways technology shapes society, especially where it intersects with politics, policy, and real-world impact. I care about building tools that are not only functional but thoughtful solutions that support people, communities, and transparency. My background in Ecommerce has taught me how to deliver under pressure, but what drives me most is the chance to work on projects that live at the edge of systems, where technology influences how we live, decide, and connect.            <br></br>
             <br></br>
-            <br></br>
-            When I’m not coding, you’ll probably find me biking around Austin, exploring Texas on weekend day trips, or supporting local small businesses. I’m passionate about sustainability, mass transit, and making cities better places to live. I also follow politics and environmental issues closely, and lately, I’ve been diving into the world of AI and its potential to transform how we work and live.
+            In my free-time, I enjoy biking, staying up-to-date on politics (especially locally), learning new things.
           </p>
           {/* Add more details here */}
         </section>

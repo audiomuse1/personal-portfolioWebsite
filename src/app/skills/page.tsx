@@ -66,7 +66,7 @@ const services = [
 
 export default function SkillsPage() {
 	return (
-		<div className="container mx-auto px-4 py-8 mt-16">
+		<div className="container mx-auto px-4 py-8">
 			<PageHeading>Skills & Services</PageHeading>
 			<motion.div
 				initial={{ opacity: 0 }}

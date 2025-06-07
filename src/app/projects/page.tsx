@@ -80,12 +80,27 @@ const projects: Project[] = [
       "Webhooks",
       "CI/CD"
     ]
-  }
+  }, 
+  {
+  title: "Contributions to Franklin Production Management System",
+  description: "An internal Symfony-based application that manages production and fulfillment workflows for custom print orders received from multiple BigCommerce webstores. Powers the entire production pipeline across departments.",
+  learnings: "Led enhancements to fulfillment and production status tracking, implemented robust backend logic for real-world operational needs, and optimized workflows based on direct feedback from production teams. Gained experience with Symfony, Doctrine, and maintaining critical systems in a live production environment.",
+  image: "/images/portfolioProjectImages/portfolioFranklin.png",
+  githubUrl: "https://github.com/bumperactive-com/bac-franklin",
+  technologies: [
+    "PHP",
+    "Symfony",
+    "MySQL",
+    "Order Fulfillment",
+    "Doctrine ORM",
+    "Internal Tools"
+  ]
+}
 ];
 
 export default function ProjectsPage() {
   return (
-    <div className="container mx-auto px-4 py-8 mt-16">
+    <div className="container mx-auto px-4 py-8">
       <PageHeading>My Projects</PageHeading>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {projects.map((project, index) => (

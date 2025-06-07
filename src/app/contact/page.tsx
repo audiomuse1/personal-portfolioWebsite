@@ -6,7 +6,7 @@ import PageHeading from '../../components/PageHeading'
 
 export default function ContactPage() {
   return (
-    <div className="container mx-auto px-4 py-8 mt-16">
+    <div className="container mx-auto px-4 py-8">
       <PageHeading>Contact</PageHeading>
       
       <div className="mb-12">
