@@ -1,6 +1,8 @@
 // src/app/projects/page.tsx
 import Image from 'next/image';
 import Link from 'next/link';
+import PageHeading from '../../components/PageHeading'
+
 
 interface Project {
   title: string;
@@ -83,8 +85,8 @@ const projects: Project[] = [
 
 export default function ProjectsPage() {
   return (
-    <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-8">My Projects</h1>
+    <div className="container mx-auto px-4 py-8 mt-16">
+      <PageHeading>My Projects</PageHeading>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">

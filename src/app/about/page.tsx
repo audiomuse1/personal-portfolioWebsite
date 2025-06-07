@@ -1,10 +1,12 @@
 // src/app/about/page.tsx
+import PageHeading from '../../components/PageHeading'
+
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-6 py-8 mt-8">
-      <div className="max-w-4xl mx-auto">
+    <div className="container mx-auto px-4 py-8 mt-16">
+      <PageHeading>About Me</PageHeading>
+      <div className="w-full mx-auto">
         <section>
-          <h1 className="text-4xl font-bold mb-6">About Me</h1>
           <p className="prose prose-lg prose-neutral">
             Hi, I'm Andrew a developer based in Austin, TX.  I came to Austin to study Chemistry at the University of Texas, but along the way, I discovered a love for technology and building things with code. That passion led me through a full-stack coding bootcamp and into a career I genuinely enjoy every day.
             <br></br>
@@ -18,5 +20,5 @@ export default function AboutPage() {
         </section>
       </div>
     </div>
-  );
+  )
 }

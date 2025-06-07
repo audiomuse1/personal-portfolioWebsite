@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import PageHeading from '../../components/PageHeading'
+
 
 const skillCategories = [
 	{
@@ -64,14 +66,13 @@ const services = [
 
 export default function SkillsPage() {
 	return (
-		<div className="container mx-auto px-4 py-12 mt-8">
+		<div className="container mx-auto px-4 py-8 mt-16">
+			<PageHeading>Skills & Services</PageHeading>
 			<motion.div
 				initial={{ opacity: 0 }}
 				animate={{ opacity: 1 }}
 				transition={{ duration: 0.5 }}
 			>
-				<h1 className="text-4xl font-bold mb-12">Skills & Services</h1>
-
 				{/* Skills Section */}
 				<section className="mb-16">
 					<h2 className="text-2xl font-semibold mb-6">Technical Skills</h2>

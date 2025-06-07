@@ -2,11 +2,12 @@
 import Link from 'next/link';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import ContactForm from '../../components/ContactForm';
+import PageHeading from '../../components/PageHeading'
 
 export default function ContactPage() {
   return (
-    <section className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-6">Contact Me</h1>
+    <div className="container mx-auto px-4 py-8 mt-16">
+      <PageHeading>Contact</PageHeading>
       
       <div className="mb-12">
         <p className="text-lg mb-8">
@@ -45,6 +46,6 @@ export default function ContactPage() {
 
         <ContactForm />
       </div>
-    </section>
+    </div>
   );
 }

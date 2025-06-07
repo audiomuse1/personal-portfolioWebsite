@@ -1,40 +1,57 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import PageHeading from '../../components/PageHeading'
+
 
 export default function ResumePage() {
-  // PDF viewer parameters for maximized view
-  const pdfViewerParams = new URLSearchParams({
-    view: 'FitH',    // Fit to window height
-    pagemode: 'none', // Hide left menu
-    toolbar: '0',     // Hide toolbar
-    navpanes: '0',    // Hide navigation panes
-  }).toString();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   return (
-    <div className="container mx-auto px-6 py-12 mt-8">
+    <div className="container mx-auto px-4 py-8 mt-16">
+      <PageHeading>My Resume</PageHeading>
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="max-w-4xl mx-auto"
       >
-        <h1 className="text-4xl font-bold mb-8">My Resume</h1>
         
-        <div className="bg-white rounded-lg shadow-lg p-6">
-          <div className="aspect-[8.5/11] w-full">
+        <div className="bg-white rounded-lg shadow-lg p-4">
+          <div 
+            className="w-full overflow-hidden"
+            style={{ 
+              height: isMobile ? '70vh' : '85vh',
+              maxHeight: '1000px' 
+            }}
+          >
             <iframe
-              src={`/documents/Andrew Hartford - Resume (2025).pdf?${pdfViewerParams}`}
-              className="w-full h-full rounded-lg shadow-sm"
-              style={{ minHeight: '800px' }}
+              src="/documents/Andrew Hartford - Resume (2025).pdf"
+              className="w-full h-full"
+              style={{
+                border: 'none',
+                transform: isMobile ? 'scale(1)' : 'none',
+                transformOrigin: 'top left'
+              }}
             />
           </div>
           
-          <div className="mt-6 flex justify-center">
+          <div className="mt-4 flex justify-center">
             <a
               href="/documents/Andrew Hartford - Resume (2025).pdf"
               download
-              className="bg-emerald-800 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition-colors flex items-center gap-2"
+              className="bg-emerald-800 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors flex items-center gap-2"
             >
               <svg 
                 className="w-5 h-5" 
