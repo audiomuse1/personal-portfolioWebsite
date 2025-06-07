@@ -11,8 +11,8 @@ export default function MobileNav() {
     <div className="lg:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="relative z-50 p-2"
-        aria-label="Toggle Menu"
+        className="p-2 relative z-50"
+        aria-label="Toggle menu"
       >
         <div className="flex flex-col gap-1.5">
           <motion.span
@@ -36,9 +36,9 @@ export default function MobileNav() {
             initial={{ opacity: 0, x: '100%' }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
-            className="fixed inset-0 bg-emerald-800 z-40"
+            className="fixed inset-x-0 top-[3.5rem] bottom-0 bg-emerald-900 z-30"
           >
-            <nav className="flex flex-col items-center justify-center h-full space-y-8 text-xl">
+            <nav className="flex flex-col items-center justify-center h-full space-y-8 text-xl pt-4">
               <Link 
                 href="/" 
                 onClick={() => setIsOpen(false)}

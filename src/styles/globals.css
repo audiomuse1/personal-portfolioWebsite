@@ -6,3 +6,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+@media screen and (max-width: 800px) {
+  .bg-emerald-900 {
+    margin-top: 18px;
+  }
+}
